@@ -1,0 +1,497 @@
+/*general*/
+body{
+  font-family: helvetica;
+  font-size: 18px;
+};
+
+h3 {
+  font-family: Roboto Condensed;
+  color: white;
+  font-size: 2rem;
+}
+
+
+
+/*header*/
+
+header {
+  width: 50%;
+  position: fixed; right: 0;
+  float: right;
+  background-color: white;
+  z-index: 5;
+}
+
+header .container {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+.navbar-header a {
+  font-family: Roboto Condensed;
+  font-size: 3rem;
+  color: black;
+  }
+
+.navbar-header span{
+  font-family: helvetica;
+  font-size: 3rem;
+  color: black;
+}
+
+
+.navbar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+}
+
+.navbar-nav{
+  display: flex;
+  flex-flow: column;
+}
+
+.hidden-nav {
+  display: none;
+  height: 50rem;
+}
+
+.rightMenu {
+    position:absolute;
+    float:right;
+    top: 0;
+    left: 240px;
+}
+
+/*humburger menu*/
+.hamburger {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+ li a {
+  color: black;
+}
+
+/*hover dropdown*/
+ul{
+    width: 16.67rem;
+    position: relative;
+    float: right;
+    right: 0;
+    top: 0;
+}
+.nav{
+    left: 0;
+}
+li ul{
+    display: none;
+}
+
+@media only screen and (min-width:980px ) and (max-width: 1380px){
+  .navbar-header a {
+    font-family: Roboto Condensed;
+    font-size: 2rem;
+    color: black;
+    }
+
+  .navbar-header span{
+    font-family: helvetica;
+    font-size: 2rem;
+    color: black;
+  }
+
+}
+
+@media only screen and (min-width:768px ) and (max-width: 991px){
+  header {
+    width: 60%;
+  }
+
+}
+
+  @media only screen and (max-width: 768px){
+    header {
+      width: 100%;
+    }
+
+    ul{
+        width: 16.67rem;
+        position: relative;
+        float: left;
+        right: 0;
+        top: 0;
+    }
+
+  }
+
+  @media only screen and (max-width: 480px){
+    .navbar-header a {
+      font-family: Roboto Condensed;
+      font-size: 1rem;
+      color: black;
+      }
+
+    .navbar-header span{
+      font-family: helvetica;
+      font-size: 1rem;
+      color: black;
+    }
+
+  }
+
+
+  /*jumbotron*/
+
+  .jumbotron-fluid {
+    height: 24rem;
+    background-color: #a4a3a8;
+    background-image: url('../images/backpaper.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .jumbotron .textbox {
+    margin: 4rem 0;
+  }
+
+
+  .jumbotron p {
+    font-family: helvetica;
+    color: black;
+    font-size: 1rem;
+  }
+
+  .jumbotron h1 {
+    font-family: Roboto Condensed;
+    color: black;
+    font-size: 3rem;
+    padding: 1rem 0;
+  }
+
+
+  .jumbotron img {
+    width: 20%;
+    float: right;
+    margin-right: 20rem;
+    margin-top: 1rem;
+  }
+
+
+/*overview*/
+#overviewareas .text {
+  margin: 1rem;
+}
+
+#overviewareas h2 {
+  color: white;
+  font-family: Roboto Condensed;
+  font-size: 2rem;
+  padding-top: 7rem;
+}
+
+#overviewareas h3 {
+  color: black;
+}
+
+#overviewareas p {
+  line-height: 2rem;
+  color: black;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+  text-align: justify;
+
+}
+
+#overviewareas h1 {
+  font-family: Roboto Condensed;
+  font-size: 2rem;
+  padding: 4rem 0;
+}
+
+.profile a {
+  padding: 2rem 0;
+}
+
+#overviewareas .profile {
+  background-color: #d9d9db;
+  height: 35rem;
+  margin: 3rem 0;
+}
+
+.imagebox-overviewareas {
+  height: 35rem;
+  margin: 1rem 0;
+}
+
+.practiceareapic {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 1rem 0;
+  transition: all .5s;
+  height: 100%;
+  background-color: rgba(46, 49, 53, 0.75);
+}
+
+
+.imagebox-overviewareas #commercialpic {
+  background-image: url('../images/commercial law.jpg');
+
+}
+
+.imagebox-overviewareas #realestatepic {
+  background-image: url('../images/real-estate-law.jpg');
+
+}
+
+.imagebox-overviewareas #bankingpic {
+  background-image: url('../images/banking-and-finance.jpg');
+
+}
+
+.imagebox-overviewareas #employmentpic{
+  background-image: url('../images/labor law 2.jpg');
+
+}
+
+.imagebox-overviewareas #IPpic {
+  background-image: url('../images/intellectual-property.jpg');
+
+}
+
+.imagebox-overviewareas #estatespic {
+  background-image: url('../images/lawyers-estate-planning.jpg');
+
+}
+
+.imagebox-overviewareas #sportspic {
+  background-image: url('../images/sports law.jpg');
+
+}
+
+.imagebox-overviewareas #litigationpic {
+  background-image: url('../images/Practice Areas.jpg');
+
+}
+
+.imagebox-overviewareas #infrastructurepic {
+  background-image: url('../images/infrastructure.jpg');
+}
+
+.imagebox-overviewareas #disputeresolutionpic {
+  background-image: url('../images/dispute.jpg');
+}
+
+@media only screen and (max-width: 991px){
+   #emptybox {
+    display: none;
+  }
+
+  }
+
+
+/*About*/
+
+#About .row {
+  background-color: whitesmoke;
+  margin: 2rem 0;
+}
+
+#About {
+  margin-bottom: 2rem;
+}
+
+#About h3 {
+  padding-top: 15rem;
+  font-family: Roboto Condensed;
+  color: white;
+  font-size: 2rem;
+}
+
+.imagebox {
+  height: 30rem;
+
+}
+
+.Team {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all .5s;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+
+}
+
+.imagebox #Partners {
+  background-image: url('../images/DSC_6693_cropped-2-vanilla.jpg');
+  background-position: top;
+
+}
+
+.imagebox #Contact {
+  background-image: url('../images/contactUs.jpg');
+
+}
+
+.imagebox #difference {
+  background-image: url('../images/difference.jpg');
+
+}
+
+
+
+
+.imagebox:hover .Team,
+.imagebox:focus .Team {
+  transform: scale(1.1);
+
+}
+
+.Team::before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(46, 49, 53, 0.75);
+}
+
+.imagebox:hover .Team:before,
+.imagebox:focus .Team:before {
+  display: block;
+}
+
+/*contact section*/
+.contactbox {
+  background-color: #d9d9db;
+  height: 25rem;
+}
+
+.Contact::before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(46, 49, 53, 0.75);
+}
+
+.contactbox:hover .Contact:before,
+.contactbox:focus .Contact:before {
+  display: block;
+}
+
+
+.contactbox {
+  color: black;
+
+
+}
+
+.contactbox h2 {
+  padding: 2rem 0;
+  font-weight: bold;
+  font-family: helvetica;
+}
+
+.contactbox h4 {
+  padding: 0.5rem 0;
+}
+
+.contactbox img {
+  height: 20rem;
+}
+
+@media only screen and (max-width: 991px){
+   .contactbox {
+    display: none;
+  }
+
+  }
+
+.row .text-center {
+  margin-top: 2rem;
+}
+
+#contact {
+  background-color: #272725;
+  padding-bottom: 2rem;
+
+}
+
+#contact h3{
+  color: white;
+  font-family: Roboto Condensed;
+  font-size: 2rem;
+}
+
+
+
+.form input {
+  width: 100%;
+  height: 60px;
+  padding: 0 20px;
+  border: none;
+  margin-right: 5px;
+  margin-top: 2rem;
+  background: rgba(255, 255, 255, .85);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, .15);
+  color: #473e39;
+}
+
+
+.form #message {
+  height: 180px;
+  margin-bottom: 2rem;
+}
+
+
+/*footer*/
+footer {
+  font-family: Roboto Condensed;
+  border-top: solid white 1px;
+  background-color: #272725;
+  color: white;
+  height: 4rem;
+}
+
+footer .row {
+  padding: 1rem 4rem;
+  font-size: 1rem;
+}
