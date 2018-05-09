@@ -167,43 +167,46 @@
                 <h3>CONTACT US</h3>
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-1">
+              <form action="mail.php" method="POST">
+                  <div class="row">
+                      <div class="col-md-1">
+                      </div>
+                      <div id="contact-form" class="form col-md-5">
+                          <input type="text" name="fname" placeholder="First Name">
+                      </div>
+                      <div id="contact-form" class="form col-md-5">
+                          <input type="text" name="lname" placeholder="Last Name">
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-1">
+                      </div>
+                      <div id="contact-form" class="form col-md-5">
+                          <input type="text" name="phone" placeholder="Mobile Number">
+                      </div>
+                      <div id="contact-form" class="form col-md-5">
+                          <input type="text" name="email" placeholder="Email Address">
+                      </div>
+                  </div>
+                  <br>
+                  <div class="row">
+                    <div class="col-md-1">
 
-              </div>
-              <div id="contact-form" class="form col-md-5">
-                <input id="first-name" type="text" placeholder="First Name">
-              </div>
-              <div id="contact-form" class="form col-md-5">
-                <input id="last-name" type="text" placeholder="Last Name">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-1">
+                    </div>
+                      <div id="contact-form" class="form col-md-10">
+                          <textarea id="message" type="text" name="message" rows="6" cols="108" placeholder="Your Message"></textarea>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-5">
+                      </div>
+                      <div id="submit" class="form col-md-2">
+                          <input class="btn btn-default btn-lg" type="submit" value="SUBMIT">
+                      </div>
+                  </div>
 
-              </div>
-              <div id="contact-form" class="form col-md-5">
-                <input id="Phone-Number" type="text" placeholder="Phone Number">
-              </div>
-              <div id="contact-form" class="form col-md-5">
-                <input id="Email" type="text" placeholder="Email">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-1">
-
-              </div>
-              <div id="contact-form" class="form col-md-10">
-                <input id="message" type="text" placeholder="Your Message">
-              </div>
-            </div>
-            <div class="row">
-              <div class="text-center">
-                <a class="btn btn-default btn-lg" href="#contact">SUBMIT</a>
-
-              </div>
-            </div>
-          </div>
+              </form>
+              <br>
 
       <!--footer-->
       <footer class="container-fluid">

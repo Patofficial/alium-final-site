@@ -296,7 +296,8 @@ li ul{
 
 
 
-.form input {
+.form input,
+.form textarea {
   width: 100%;
   height: 60px;
   padding: 0 20px;
@@ -311,7 +312,11 @@ li ul{
 
 .form #message {
   height: 180px;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  margin-bottom: 1rem;
 }
 
 
